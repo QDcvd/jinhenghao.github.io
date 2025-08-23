@@ -5,6 +5,35 @@
     
     <entry>
       
+        <title>在浏览器中运行Python--基于Vercel中部署JupyterLite过程</title>
+      
+      <link href="/posts/20250823203726.html"/>
+      <url>/posts/20250823203726.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>JupyterLite 是一个完全在浏览器中运行的 JupyterLab 发行版，它基于 JupyterLab 组件和扩展从头构建而成。</p><p>JupyterLite 可以在不需要安装任何软件的情况下直接在浏览器中运行。</p><p>本文记录了如何基于Vercel去部署JupyterLite站点</p><p>官网：<a href="https://jupyterlite.readthedocs.io/en/stable/index.html">https://jupyterlite.readthedocs.io/en/stable/index.html</a></p><h2 id="部署过程"><a href="#部署过程" class="headerlink" title="部署过程"></a>部署过程</h2><h3 id="在github中拉取jupyterlite-Demo"><a href="#在github中拉取jupyterlite-Demo" class="headerlink" title="在github中拉取jupyterlite Demo"></a>在github中拉取jupyterlite Demo</h3><p>首先在GitHub中将该项目fork下来，地址：<a href="https://github.com/jupyterlite/demo">https://github.com/jupyterlite/demo</a></p><p><img src="/images/image_1755952964205.png" alt="image.png"></p><p>而后创建部署脚本，取名为deploy.sh</p><p>内容如下：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="built_in">echo</span> y | yum install wget</span><br><span class="line">wget -qO- https://micromamba.snakepit.net/api/micromamba/linux-64/latest | tar -xvj bin/micromamba</span><br><span class="line"><span class="comment"># activate the environment and install a new version of Python</span></span><br><span class="line"><span class="comment"># Set up environment variables</span></span><br><span class="line"><span class="built_in">export</span> MAMBA_ROOT_PREFIX=<span class="string">&quot;<span class="variable">$PWD</span>/micromamba&quot;</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;<span class="variable">$PWD</span>/bin:<span class="variable">$PATH</span>&quot;</span></span><br><span class="line"><span class="comment"># Create the environment</span></span><br><span class="line">micromamba create -n jupyterenv python=3.12 -c conda-forge -y</span><br><span class="line"></span><br><span class="line"><span class="comment"># Install dependencies via pip in the micromamba environment</span></span><br><span class="line">micromamba run -n jupyterenv python -m pip install -r requirements-deploy.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># Build JupyterLite</span></span><br><span class="line">micromamba run -n jupyterenv jupyter lite --version</span><br><span class="line">micromamba run -n jupyterenv jupyter lite build --contents content --output-dir dist</span><br></pre></td></tr></table></figure><p>再创建txt文件，取名为requirements-deploy.txt ，用于安装各种依赖</p><p>内容如下：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">jupyterlab</span><br><span class="line">jupyterlite-core</span><br><span class="line">jupyterlite-pyodide-kernel</span><br><span class="line">notebook</span><br><span class="line">jupyterlab-language-pack-zh-CN</span><br><span class="line">jupyterlab-night</span><br><span class="line">ipywidgets</span><br><span class="line">nbformat</span><br><span class="line">plotly</span><br></pre></td></tr></table></figure><p>然后在fork下来的项目中上传两个文件</p><p><img src="/images/image_1755953193193.png" alt="image.png"></p><p>至此，github部分完成</p><h3 id="在Vercel中部署juputerlite项目"><a href="#在Vercel中部署juputerlite项目" class="headerlink" title="在Vercel中部署juputerlite项目"></a>在Vercel中部署juputerlite项目</h3><p>进入vercel，在前台中创建project</p><p><img src="/images/image_1755953277159.png" alt="image.png"></p><p>引入fork下来的项目</p><p><img src="/images/image_1755953334047.png" alt="image.png"></p><p><img src="/images/image_1755953374396.png" alt="image.png"></p><p>而后在此页面输入bash .&#x2F;deploy.sh，在output directory中输入dist。随后点击deploy进行部署即可</p><p>等一会后即可部署完成，可在Overview页面点击Domain下的网址进行访问</p><p><img src="/images/image_1755953479508.png" alt="image.png"></p><p>等出现jupyter页面后即可完成部署，也就可以开始使用jupyterlite了。</p><p><img src="/images/image_1755953537028.png" alt="image.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
         <title>RNA-seq学习记录</title>
       
       <link href="/posts/20250821165237.html"/>
