@@ -5,6 +5,33 @@
     
     <entry>
       
+        <title>基于David数据库与微生信平台进行Go-KEGG分析</title>
+      
+      <link href="/posts/20250916200356.html"/>
+      <url>/posts/20250916200356.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="进入DAVID数据库"><a href="#进入DAVID数据库" class="headerlink" title="进入DAVID数据库"></a>进入DAVID数据库</h2><p><img src="/images/image_1758024448221.png" alt="image.png"></p><p>选择Functional Annotation</p><p><img src="/images/image_1758024643434.png" alt="image.png"></p><p><img src="/images/image_1758024806619.png" alt="image.png"></p><p>点击Functional Annotation Tool</p><p><img src="/images/image_1758024879283.png" alt="image.png"></p><p>选择GO与PathWays</p><p><img src="/images/image_1758024903110.png" alt="image.png"></p><p>GO这里选择BP、CC、MF</p><p>点击Chart可看到：</p><p><img src="/images/image_1758024938047.png" alt="image.png"></p><p>点击下载文件，将数据复制粘贴到EXCEL中备用。</p><p>其余的CC、MF也是同样的操作</p><p><img src="/images/image_1758024993375.png" alt="image.png"></p><p>PATHWAY这里我们只选择KEGG进行下载，也是点击Chart，下载文件并整理到excel中备用。</p><h2 id="整理从DAVID数据库下载的文件"><a href="#整理从DAVID数据库下载的文件" class="headerlink" title="整理从DAVID数据库下载的文件"></a>整理从DAVID数据库下载的文件</h2><p>一般下载下来的表格如图所示：</p><p><img src="/images/image_1758025214370.png" alt="image.png"></p><p>在这里分了4个Sheet，每个Sheet对应着从不同地方搜集下来的数据，分为BP、CC、MF、KEGG</p><h3 id="三合一图作法"><a href="#三合一图作法" class="headerlink" title="三合一图作法"></a>三合一图作法</h3><p>三合一的图需要以下格式：</p><p><img src="/images/image_1758025347789.png" alt="image.png"></p><p>只取Term和PValue的值，其中Term需要去除前面GO：xxxx的数值，留下后面的信号通路名字</p><p>同样的道理，分别搜集BP、CC、MF并累积到一个Sheet中，如图所示：</p><p><img src="/images/image_1758025436135.png" alt="image.png"></p><p>subgroup与Enrichment Score需要自己手动创建，其中subgroup对应的就是你搜集下来的数据是属于BP还是CC亦或者是MF。需要作一个提前标识。而Enrichment Score列实则上是由 -log10(PValue) 而来，在excel中设立公式，并ctrl左键拉动自动计算即可：<br><img src="/images/image_1758025578562.png" alt="image.png"></p><p>打开微生信</p><p><img src="/images/image_1758025629885.png" alt="image.png"></p><p>选择三合一功能</p><p><img src="/images/image_1758025800306.png" alt="image.png"></p><p>直接复制粘贴进去，按照自己的要求调整参数，并提交任务</p><p>最后输出图：</p><p><img src="/images/image_1758025839325.png" alt="image.png"></p><h3 id="富集分析图画法"><a href="#富集分析图画法" class="headerlink" title="富集分析图画法"></a>富集分析图画法</h3><p>这里点入KEGG，并对数据作提前处理：</p><p><img src="/images/image_1758025919949.png" alt="image.png"></p><p>这里选择Term、FDR、PValue、Count列进行整理。</p><p>然后打开微生信平台</p><p><img src="/images/image_1758026010830.png" alt="image.png"></p><p>选择富集气泡图</p><p><img src="/images/image_1758026068401.png" alt="image.png"></p><p>直接复制粘贴进去，按照自己的要求调整参数，并提交任务</p><p>最后输出图：</p><p><img src="/images/image_1758026089187.png" alt="image.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生物信息 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 富集分析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
         <title>RNA-seq基本介绍及实战——差异分析</title>
       
       <link href="/posts/20250903205237.html"/>
