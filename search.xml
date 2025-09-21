@@ -5,6 +5,33 @@
     
     <entry>
       
+        <title>秀丽隐杆线虫油红O响应值测定方法</title>
+      
+      <link href="/posts/20250921164632.html"/>
+      <url>/posts/20250921164632.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在做秀丽隐杆线虫实验的时候，我们往往需要对线虫测定脂肪分布，这时候可能需要使用油红O染色法测定线虫脂肪滴的分布，在这里就简易地说一下测定的方法。</p><h2 id="实验准备"><a href="#实验准备" class="headerlink" title="实验准备"></a>实验准备</h2><p>需要有ImageJ软件、油红O线虫染色的照片如图所示：</p><p><img src="/images/0009.jpg.jpeg" alt="0009.jpg"></p><h2 id="测定过程"><a href="#测定过程" class="headerlink" title="测定过程"></a>测定过程</h2><p><strong>打开ImageJ</strong></p><p>其软件界面如图所示：</p><p><img src="/images/image_1758444689890.png" alt="image.png"></p><p>首先点击Analyze——Set Measurement..</p><p>按图选择所需要的指标：</p><p><img src="/images/image_1758444753749.png" alt="image.png"></p><p>点击OK</p><p><strong>打开线虫染色的图片</strong></p><p>点击File——Open——选择照片</p><p><strong>图片RGB转灰度处理</strong></p><p>点击Image——Type——8-Bits</p><p>此时图片变成灰度图：</p><p><img src="/images/image_1758444872657.png" alt="image.png"></p><p><strong>将图片反转选择</strong></p><p>点击Edit——Invert</p><p>此时图片变成如下图所示：</p><p><img src="/images/image_1758444923328.png" alt="image.png"></p><p><strong>设定阈值</strong></p><p>点击Image——Adjust——Threshold</p><p><img src="/images/image_1758444986876.png" alt="image.png"></p><p>按照所需要的数值进行调整，尽量将线虫染色的区域囊括进去</p><p>随后点击</p><p><img src="/images/image_1758445034671.png" alt="image.png"></p><p>对线虫本体进行框选</p><p><img src="/images/image_1758445066332.png" alt="image.png"></p><p><strong>测定响应值</strong></p><p>框选完毕后测定响应值，点击Analyze——Measure</p><p><img src="/images/image_1758445120455.png" alt="image.png"></p><p>得出测定油红O的响应值，一般文献会选择线虫的平均光密度</p><p>也就是平均光密度&#x3D;IntDen &#x2F; Area</p><p>在这里的数值为：152.035, 和Mean值基本相同，所以一般我会使用Mean数值进行记录</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 湿实验相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 秀丽隐杆线虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
         <title>基于David数据库与微生信平台进行Go-KEGG分析</title>
       
       <link href="/posts/20250916200356.html"/>
