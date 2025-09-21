@@ -3,4 +3,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.jinhenghaoblog.top/sitemap.xml
-Sitemap: https://www.jinhenghaoblog.top/baidusitemap.xml
