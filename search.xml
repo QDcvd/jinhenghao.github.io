@@ -5,6 +5,33 @@
     
     <entry>
       
+        <title>python导入模块时遇到ModuleNotFoundError: No module named ’xxx‘</title>
+      
+      <link href="/posts/20250924211902.html"/>
+      <url>/posts/20250924211902.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>记录以前学习python的时候遇到模块导入问题的解决方法</p><h2 id="问题出现过程"><a href="#问题出现过程" class="headerlink" title="问题出现过程"></a>问题出现过程</h2><p>在python导入模块时候遇到 ModuleNotFoundError: No module named “pandas”</p><p>出现错误的代码块如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure><p>出现：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">ModuleNotFoundError: No module named <span class="string">&#x27;pandas&#x27;</span></span><br></pre></td></tr></table></figure><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>在terminal下运行指令：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用conda</span></span><br><span class="line">conda install pandas</span><br><span class="line"><span class="comment"># 使用pip</span></span><br><span class="line">pip install pandas</span><br><span class="line"><span class="comment"># 在该环境下使用pip安装</span></span><br><span class="line">python -m pip install pandas</span><br><span class="line"><span class="comment"># 基于清华源使用pip安装（推荐）</span></span><br><span class="line">pip install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple pandas</span><br></pre></td></tr></table></figure><p>对于任何模块，若出现这种模块导入问题，可以将“pandas”换成需要要导入模块的名称</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
         <title>秀丽隐杆线虫油红O响应值测定方法</title>
       
       <link href="/posts/20250921164632.html"/>
