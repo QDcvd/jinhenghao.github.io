@@ -1,5 +1,4 @@
 # hexo robots.txt
 User-agent: *
 Allow: /
-
-Sitemap: https://www.jinhenghaoblog.top/sitemap.xml
+Disallow: /search/
