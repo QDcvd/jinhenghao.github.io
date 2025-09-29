@@ -1,4 +1,13 @@
-# hexo robots.txt
+# robots.txt for jinhenghaoblog.top
+
+# 允许所有搜索引擎抓取主要内容
 User-agent: *
 Allow: /
+
+# 不希望被收录的目录（后台、临时文件、脚本等）
 Disallow: /search/
+Disallow: /categories/
+Disallow: /about/
+
+# Sitemap 路径（确保你生成了 sitemap.xml 并放在根目录）
+Sitemap: https://www.jinhenghaoblog.top/sitemap.xml
