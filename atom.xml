@@ -6,7 +6,7 @@
   <link href="https://www.jinhenghaoblog.top/atom.xml" rel="self"/>
   
   <link href="https://www.jinhenghaoblog.top/"/>
-  <updated>2025-10-13T03:54:40.782Z</updated>
+  <updated>2025-10-21T12:46:47.357Z</updated>
   <id>https://www.jinhenghaoblog.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SQL DCL语句详解：掌握数据库用户管理和访问数据库权限</title>
+    <link href="https://www.jinhenghaoblog.top/posts/20251021110124.html"/>
+    <id>https://www.jinhenghaoblog.top/posts/20251021110124.html</id>
+    <published>2025-10-21T03:01:24.000Z</published>
+    <updated>2025-10-21T12:46:47.357Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="DCL介绍"><a href="#DCL介绍" class="headerlink" title="DCL介绍"></a>DCL介绍</h2><p>DCL英文全称是Data ControlLanguage(数据控制语言)，用来管理数据库 用户、控制数据库的访问权限。</p><h3 id="DCL-——-管理用户"><a href="#DCL-——-管理用户" class="headerlink" title="DCL —— 管理用户"></a>DCL —— 管理用户</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 查询用户</span><br><span class="line">USE mysql;</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> <span class="keyword">user</span>;</span><br><span class="line"># 创建用户</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">&#x27;用户名&#x27;</span>@<span class="string">&#x27;主机名&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;密码&#x27;</span>;</span><br><span class="line"># 修改用户密码</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;用户名&#x27;</span>@<span class="string">&#x27;主机名&#x27;</span> IDENTIFIED <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> <span class="string">&#x27;新密码&#x27;</span></span><br><span class="line"># 删除用户</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">USER</span> <span class="string">&#x27;用户名&#x27;</span>@<span class="string">&#x27;主机名&#x27;</span></span><br></pre></td></tr></table></figure><p><strong>实例</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 创建用户哈基米，只能够在localhost访问，密码<span class="number">123456</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> <span class="string">&#x27;哈基米&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> identified <span class="keyword">by</span> <span class="string">&#x27;123456&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 创建用户大狗叫，可以在任意主机访问该数据库，密码<span class="number">123456</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> <span class="string">&#x27;大狗叫&#x27;</span>@<span class="string">&#x27;%&#x27;</span> identified <span class="keyword">by</span> <span class="string">&#x27;123456&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 修改用户哈基米的访问密码为<span class="number">1234</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> <span class="string">&#x27;哈基米&#x27;</span>@<span class="string">&#x27;%&#x27;</span> identified <span class="keyword">with</span> mysql_native_password <span class="keyword">by</span> <span class="string">&#x27;1234&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 删除大狗叫<span class="variable">@localhost</span>用户</span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">user</span> <span class="string">&#x27;大狗叫&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span>;</span><br></pre></td></tr></table></figure><h3 id="DCL-——-权限控制"><a href="#DCL-——-权限控制" class="headerlink" title="DCL —— 权限控制"></a>DCL —— 权限控制</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 查询权限</span><br><span class="line"><span class="keyword">SHOW</span> GRANTS <span class="keyword">FOR</span> <span class="string">&#x27;用户名&#x27;</span>@<span class="string">&#x27;主机名&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 授予权限</span><br><span class="line"><span class="keyword">GRANT</span> 权限列表 <span class="keyword">ON</span> 数据库名.表名 <span class="keyword">TO</span> <span class="string">&#x27;用户名&#x27;</span>@<span class="string">&#x27;主机名&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 撤销权限</span><br><span class="line"><span class="keyword">REVOKE</span> 权限列表 <span class="keyword">ON</span> 数据库名.表名 <span class="keyword">FROM</span> <span class="string">&#x27;用户名&#x27;</span>@<span class="string">&#x27;主机名&#x27;</span>;</span><br></pre></td></tr></table></figure><p><strong>示例</strong></p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 查询权限</span><br><span class="line"><span class="keyword">show</span> grants <span class="keyword">for</span> <span class="string">&#x27;哈基米&#x27;</span>@<span class="string">&#x27;%&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 授予权限</span><br><span class="line"><span class="keyword">grant</span> <span class="keyword">all</span> <span class="keyword">on</span> 数据库.<span class="operator">*</span> <span class="keyword">to</span> <span class="string">&#x27;哈基米&#x27;</span>@<span class="string">&#x27;%&#x27;</span>;</span><br><span class="line"></span><br><span class="line"># 撤销权限</span><br><span class="line"><span class="keyword">revoke</span> <span class="keyword">all</span> <span class="keyword">on</span> 数据库.<span class="operator">*</span> <span class="keyword">from</span> <span class="string">&#x27;哈基米&#x27;</span>@<span class="string">&#x27;%&#x27;</span>;</span><br></pre></td></tr></table></figure><p>注意：</p><ul><li>多个权限之间，使用逗号分隔</li><li>授权时，数据库名和表名可以使用 * 进行通配，代表所有</li></ul>]]></content>
+    
+    
+    <summary type="html">整篇内容系统地展示了数据库安全管理的基础操作，帮助读者掌握了从用户创建、修改到权限分配与撤销的完整流程，为数据库安全和权限管理打下了坚实基础。</summary>
+    
+    
+    
+    <category term="学习" scheme="https://www.jinhenghaoblog.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="SQL" scheme="https://www.jinhenghaoblog.top/tags/SQL/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL DML语句详解：掌握增删改三大核心操作</title>
@@ -439,7 +460,7 @@
     <link href="https://www.jinhenghaoblog.top/posts/20250815193333.html"/>
     <id>https://www.jinhenghaoblog.top/posts/20250815193333.html</id>
     <published>2025-08-15T11:33:33.000Z</published>
-    <updated>2025-08-17T16:09:03.989Z</updated>
+    <updated>2025-10-21T03:37:50.435Z</updated>
     
     <content type="html"><![CDATA[<div style="position: relative;width: 100%;height: 0;padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114494449648083&bvid=BV1UREEzAEyz&cid=29924330369&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div><p><a href="https://www.youtube.com/watch?v=OdZGgVD_iv4">https://www.youtube.com/watch?v=OdZGgVD_iv4</a></p><p>视频转载自油管，并使用deepseek自动进行翻译k自动进行翻译</p>]]></content>
     
@@ -511,31 +532,6 @@
     <category term="pytorch" scheme="https://www.jinhenghaoblog.top/tags/pytorch/"/>
     
     <category term="深度学习" scheme="https://www.jinhenghaoblog.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>多浓度线虫高糖培养基配方记录</title>
-    <link href="https://www.jinhenghaoblog.top/posts/20250813202247.html"/>
-    <id>https://www.jinhenghaoblog.top/posts/20250813202247.html</id>
-    <published>2025-08-13T12:22:47.000Z</published>
-    <updated>2025-08-17T16:09:03.980Z</updated>
-    
-    <content type="html"><![CDATA[<p>记于2025-6-11</p><p>要求（<strong>100 mg&#x2F;mL</strong>母液浓度，配制400 mL培养基的目标浓度），使用稀释公式 <strong><strong><strong>C</strong></strong>₁V</strong><strong>₁ &#x3D; C<strong><strong>₂V</strong></strong>₂</strong> 计算各浓度所需母液体积（单位：μg&#x2F;mL与mL需统一）</p><p>具体计算如下：</p><h1 id="🔢-关键参数"><a href="#🔢-关键参数" class="headerlink" title="🔢 关键参数"></a><strong>🔢 关键参数</strong></h1><ul><li><strong><strong><strong>母液浓度 (C</strong></strong>₁)</strong>****：100 mg&#x2F;mL &#x3D; <strong><strong><strong>100,000 μg&#x2F;mL</strong></strong></strong>（1 mg &#x3D; 1000 μg）</li><li><strong><strong><strong>目标体积 (V</strong></strong>₂)</strong>****：400 mL</li><li><strong><strong><strong>目标浓度 (C</strong></strong>₂)</strong>****：25、50、100、200、500 μg&#x2F;mL</li><li><strong><strong><strong>需加母液体积 (V</strong></strong>₁)</strong><strong>**：按公式 <strong><strong><strong>V</strong></strong>₁ &#x3D; (C</strong>**₂ <strong><strong>× V</strong></strong>₂) &#x2F; C</strong><strong>₁</strong></li></ul><h1 id="📊-计算结果"><a href="#📊-计算结果" class="headerlink" title="📊 计算结果"></a><strong>📊 计算结果</strong></h1><table><thead><tr><th><strong>目标浓度(μg&#x2F;mL)</strong></th><th><strong>需加母液体积(μL)</strong></th><th><strong>计算公式与过程</strong></th></tr></thead><tbody><tr><td>25</td><td><strong><strong><strong>100 μL</strong></strong></strong></td><td>(25  × 400) ÷ 100,000 &#x3D; 0.1 mL &#x3D; 100 μL</td></tr><tr><td>50</td><td><strong><strong><strong>200 μL</strong></strong></strong></td><td>(50  × 400) ÷ 100,000 &#x3D; 0.2 mL &#x3D; 200 μL</td></tr><tr><td>100</td><td><strong><strong><strong>400 μL</strong></strong></strong></td><td>(100  × 400) ÷ 100,000 &#x3D; 0.4 mL &#x3D; 400 μL</td></tr><tr><td>200</td><td><strong><strong><strong>800 μL</strong></strong></strong></td><td>(200  × 400) ÷ 100,000 &#x3D; 0.8 mL &#x3D; 800 μL</td></tr><tr><td>500</td><td><strong><strong><strong>2000 μL</strong></strong></strong></td><td>(500  × 400) ÷ 100,000 &#x3D; 2 mL &#x3D; 2000 μL</td></tr></tbody></table><h1 id="⚠️-操作注意事项"><a href="#⚠️-操作注意事项" class="headerlink" title="⚠️ 操作注意事项"></a><strong>⚠️ 操作注意事项</strong></h1><ol><li><strong><strong><strong>单位转换</strong></strong></strong>：所有浓度单位需统一为μg&#x2F;mL（母液100 mg&#x2F;mL &#x3D; 100,000 μg&#x2F;mL）</li><li><strong><strong><strong>体积控制</strong></strong></strong>：<ul><li>需将母液加入400 mL培养基中，<strong><strong><strong>最终总体积需严格为400 mL</strong></strong></strong>（若培养基初始体积不足400 mL，需先补足溶剂再添加母液）</li><li>例如：配制500 μg&#x2F;mL时，需取<strong><strong><strong>2000 μL母液</strong></strong></strong>加入<strong><strong><strong>398 mL培养基</strong></strong></strong>（400 mL - 2 mL &#x3D; 398 mL）。</li></ul></li><li><strong><strong><strong>混合均匀</strong></strong></strong>：加入母液后需充分搅拌或震荡培养基，确保浓度均一</li></ol><h1 id="💎-总结步骤"><a href="#💎-总结步骤" class="headerlink" title="💎 总结步骤"></a><strong>💎 总结步骤</strong></h1><ol><li>取400 mL培养基（若为固体需预先溶解）；</li><li>按上表体积加入母液；</li><li>混合均匀后即可使用。<br>后即可使用。</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;记于2025-6-11&lt;/p&gt;
-&lt;p&gt;要求（&lt;strong&gt;100 mg&amp;#x2F;mL&lt;/strong&gt;母液浓度，配制400 mL培养基的目标浓度），使用稀释公式 &lt;strong&gt;&lt;strong&gt;&lt;strong&gt;C&lt;/strong&gt;&lt;/strong&gt;₁V&lt;/strong&gt;</summary>
-      
-    
-    
-    
-    <category term="湿实验相关" scheme="https://www.jinhenghaoblog.top/categories/%E6%B9%BF%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3/"/>
-    
-    
-    <category term="秀丽隐杆线虫" scheme="https://www.jinhenghaoblog.top/tags/%E7%A7%80%E4%B8%BD%E9%9A%90%E6%9D%86%E7%BA%BF%E8%99%AB/"/>
     
   </entry>
   
