@@ -6,7 +6,7 @@
   <link href="https://www.jinhenghaoblog.top/atom.xml" rel="self"/>
   
   <link href="https://www.jinhenghaoblog.top/"/>
-  <updated>2025-11-07T02:57:28.518Z</updated>
+  <updated>2025-11-21T03:16:22.987Z</updated>
   <id>https://www.jinhenghaoblog.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线虫培养、同步化及相关培养基制备指南</title>
+    <link href="https://www.jinhenghaoblog.top/posts/20251121112230.html"/>
+    <id>https://www.jinhenghaoblog.top/posts/20251121112230.html</id>
+    <published>2025-11-21T03:22:30.000Z</published>
+    <updated>2025-11-21T03:16:22.987Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>记录于 2025-4-21</em><br><em>对现有的实验方案进行部分调整</em></p><hr><h2 id="LB-培养基"><a href="#LB-培养基" class="headerlink" title="LB 培养基"></a>LB 培养基</h2><p><strong>固体需加琼脂粉 15 g&#x2F;L</strong>（250 mL 加 3.75 g）</p><table><thead><tr><th>配方（1L &#x2F; 250 mL）</th><th>1L</th><th>250 mL</th></tr></thead><tbody><tr><td>NaCl</td><td>5 g</td><td>1.25 g</td></tr><tr><td>胰蛋白胨</td><td>10 g</td><td>2.5 g</td></tr><tr><td>酵母提取粉</td><td>5 g</td><td>1.25 g</td></tr></tbody></table><p>使用 1M NaOH 调 pH 7.5，121℃ 高压灭菌。</p><hr><h2 id="NGM-培养基（铝箔包装）"><a href="#NGM-培养基（铝箔包装）" class="headerlink" title="NGM 培养基（铝箔包装）"></a>NGM 培养基（铝箔包装）</h2><table><thead><tr><th>成分</th><th>1L</th><th>400 mL</th><th>100 mL</th></tr></thead><tbody><tr><td>NaCl</td><td>3.0 g</td><td>1.2 g</td><td>0.3 g</td></tr><tr><td>细菌蛋白胨</td><td>2.5 g</td><td>1 g</td><td>0.25 g</td></tr><tr><td>琼脂粉</td><td>17 g</td><td>6.8 g</td><td>1.7 g</td></tr><tr><td>去离子水</td><td>975 mL</td><td>390 mL</td><td>97.5 mL</td></tr></tbody></table><p>121℃ 高压灭菌，冷却至 55℃ 后加入：</p><table><thead><tr><th>添加剂</th><th>1L</th><th>400 mL</th><th>100 mL</th></tr></thead><tbody><tr><td>胆固醇 (5 mg&#x2F;mL)</td><td>1 mL</td><td>0.4 mL</td><td>0.1 mL</td></tr><tr><td>1 M CaCl₂</td><td>1 mL</td><td>0.4 mL</td><td>0.1 mL</td></tr><tr><td>1 M MgSO₄</td><td>1 mL</td><td>0.4 mL</td><td>0.1 mL</td></tr><tr><td>1 M KPO₄ 缓冲液</td><td>25 mL</td><td>10 mL</td><td>2.5 mL</td></tr></tbody></table><hr><h2 id="CaCl₂（1M，111-g-L）"><a href="#CaCl₂（1M，111-g-L）" class="headerlink" title="CaCl₂（1M，111 g&#x2F;L）"></a>CaCl₂（1M，111 g&#x2F;L）</h2><table><thead><tr><th>配方</th><th>1L</th><th>400 mL</th><th>200 mL</th></tr></thead><tbody><tr><td>CaCl₂</td><td>111 g</td><td>44.4 g</td><td>22.2 g</td></tr></tbody></table><p>121℃ 高压灭菌。</p><hr><h2 id="MgSO₄（1M）"><a href="#MgSO₄（1M）" class="headerlink" title="MgSO₄（1M）"></a>MgSO₄（1M）</h2><table><thead><tr><th>配方</th><th>1L</th><th>200 mL</th><th>100 mL</th></tr></thead><tbody><tr><td>MgSO₄</td><td>120 g</td><td>24 g</td><td>12 g</td></tr><tr><td>或 MgSO₄·7H₂O</td><td>246 g</td><td>49.2 g</td><td>24.6 g</td></tr></tbody></table><p>121℃ 高压灭菌。</p><hr><h2 id="KPO₄-缓冲液（1M）"><a href="#KPO₄-缓冲液（1M）" class="headerlink" title="KPO₄ 缓冲液（1M）"></a>KPO₄ 缓冲液（1M）</h2><table><thead><tr><th>配方</th><th>1L</th><th>400 mL</th><th>200 mL</th></tr></thead><tbody><tr><td>K₂HPO₄·3H₂O</td><td>35.6 g</td><td>14.24 g</td><td>7.12 g</td></tr><tr><td>KH₂PO₄</td><td>108.3 g</td><td>43.32 g</td><td>21.66 g</td></tr></tbody></table><p>用 1M NaOH 调 pH 6.0，121℃ 高压灭菌。</p><hr><h2 id="胆固醇溶液（5-mg-mL，乙醇）"><a href="#胆固醇溶液（5-mg-mL，乙醇）" class="headerlink" title="胆固醇溶液（5 mg&#x2F;mL，乙醇）"></a>胆固醇溶液（5 mg&#x2F;mL，乙醇）</h2><p>⚠ <strong>只能过滤除菌，不能高压灭菌！</strong></p><table><thead><tr><th>配方</th><th>1L</th><th>200 mL</th><th>100 mL</th></tr></thead><tbody><tr><td>胆固醇</td><td>5.0 g</td><td>1.0 g</td><td>0.5 g</td></tr><tr><td>无水乙醇</td><td>1L</td><td>200 mL</td><td>100 mL</td></tr></tbody></table><p>0.22 μm 滤膜过滤除菌。</p><hr><h2 id="NaOH-溶液"><a href="#NaOH-溶液" class="headerlink" title="NaOH 溶液"></a>NaOH 溶液</h2><h3 id="1-M-NaOH"><a href="#1-M-NaOH" class="headerlink" title="1 M NaOH"></a>1 M NaOH</h3><table><thead><tr><th>配方</th><th>1L</th><th>250 mL</th><th>50 mL</th></tr></thead><tbody><tr><td>NaOH</td><td>40 g</td><td>10 g</td><td>2 g</td></tr><tr><td>水</td><td>至体积</td><td>至体积</td><td>至体积</td></tr></tbody></table><h3 id="2-M-NaOH"><a href="#2-M-NaOH" class="headerlink" title="2 M NaOH"></a>2 M NaOH</h3><table><thead><tr><th>配方</th><th>1L</th><th>250 mL</th><th>50 mL</th></tr></thead><tbody><tr><td>NaOH</td><td>80 g</td><td>20 g</td><td>4 g</td></tr></tbody></table><hr><h2 id="M9-缓冲液（锡纸包）"><a href="#M9-缓冲液（锡纸包）" class="headerlink" title="M9 缓冲液（锡纸包）"></a>M9 缓冲液（锡纸包）</h2><table><thead><tr><th>配方</th><th>1L</th><th>400 mL</th></tr></thead><tbody><tr><td>Na₂HPO₄·12H₂O</td><td>14.32 g</td><td>6.056 g</td></tr><tr><td>KH₂PO₄</td><td>3.0 g</td><td>1.2 g</td></tr><tr><td>NaCl</td><td>5.0 g</td><td>2 g</td></tr><tr><td>MgSO₄·7H₂O</td><td>0.1 g</td><td>—</td></tr></tbody></table><p>121℃ 高压灭菌。</p><hr><h2 id="S-缓冲液"><a href="#S-缓冲液" class="headerlink" title="S 缓冲液"></a>S 缓冲液</h2><table><thead><tr><th>配方</th><th>1L</th><th>400 mL</th></tr></thead><tbody><tr><td>0.05 M K₂HPO₄·3H₂O</td><td>129 mL（1.47 g）</td><td>51.6 mL（0.59 g）</td></tr><tr><td>0.05 M KH₂PO₄</td><td>871 mL（6.10 g）</td><td>348.4 mL（2.44 g）</td></tr><tr><td>NaCl</td><td>5.85 g</td><td>2.34 g</td></tr></tbody></table><p>pH 调至 6.0，121℃ 高压灭菌。</p><hr><h2 id="甘油配置"><a href="#甘油配置" class="headerlink" title="甘油配置"></a>甘油配置</h2><table><thead><tr><th>配方</th><th>成分</th></tr></thead><tbody><tr><td>30% 甘油（线虫）</td><td>甘油 30 mL + 水 70 mL</td></tr><tr><td>25% 甘油</td><td>甘油 25 mL + 水 75 mL</td></tr><tr><td>50% 甘油</td><td>甘油 50 mL + 水 50 mL</td></tr></tbody></table><p>121℃ 高压灭菌。</p><hr><h2 id="次氯酸盐裂解液（或漂白液替代）"><a href="#次氯酸盐裂解液（或漂白液替代）" class="headerlink" title="次氯酸盐裂解液（或漂白液替代）"></a>次氯酸盐裂解液（或漂白液替代）</h2><ul><li>2M NaOH：2 mL</li><li>NaClO（6%）：2 mL</li><li>水：6 mL<br><strong>总量 10 mL</strong></li></ul><hr><h2 id="SM-培养基（2-个板-≈10-mL）"><a href="#SM-培养基（2-个板-≈10-mL）" class="headerlink" title="SM 培养基（2 个板 ≈10 mL）"></a>SM 培养基（2 个板 ≈10 mL）</h2><ul><li>S 缓冲液：10 mL</li><li>微量金属溶液：0.1 mL</li><li>1M 柠檬酸钾：0.1 mL</li><li>乙醇胆固醇：0.01 mL</li><li>MgSO₄：0.03 mL</li><li>CaCl₂：0.03 mL</li></ul><hr><h1 id="实验操作步骤"><a href="#实验操作步骤" class="headerlink" title="实验操作步骤"></a>实验操作步骤</h1><hr><h2 id="带-OP50-板子制备"><a href="#带-OP50-板子制备" class="headerlink" title="带 OP50 板子制备"></a>带 OP50 板子制备</h2><ol><li>配置 400 mL 培养基</li><li>用 90 mm 菌皿加入 1–2 mL 培养基，吹干，静置 12 小时</li><li>加入传代 8 h 的 OP50 液 200 μL</li><li>涂布并吹干</li><li>20℃ 培养 2–3 天形成菌苔</li></ol><hr><h2 id="线虫同步化"><a href="#线虫同步化" class="headerlink" title="线虫同步化"></a>线虫同步化</h2><h3 id="方法一：裂解法"><a href="#方法一：裂解法" class="headerlink" title="方法一：裂解法"></a><strong>方法一：裂解法</strong></h3><ol><li>用 M9 冲洗线虫并转入离心管</li><li>1300 g &#x2F; 2 min 离心</li><li>加裂解液涡旋 60 秒</li><li>观察虫体消失仅剩卵（总裂解 ≤10 min）</li><li>离心并用 M9 洗涤 ×2 次</li><li>将卵滴入 OP50 板，20℃ 培养</li></ol><hr><h3 id="方法二：转板法"><a href="#方法二：转板法" class="headerlink" title="方法二：转板法"></a><strong>方法二：转板法</strong></h3><ol><li>冲洗板面线虫（用于裂解法）</li><li>培养板残留卵 → 再冲洗一次并倒掉</li><li>板子吹干</li><li>20℃ 培养孵化</li><li>M1 期转入 OP50 板继续培养</li></ol><blockquote><p>两种方法可同时进行，以获得更多同步 L1 线虫。</p></blockquote><hr><h2 id="高脂线虫造模（NGM）"><a href="#高脂线虫造模（NGM）" class="headerlink" title="高脂线虫造模（NGM）"></a>高脂线虫造模（NGM）</h2><ul><li>在 <strong>100 mL NGM 中加入 2 g 葡萄糖</strong>（2%）</li></ul>]]></content>
+    
+    
+    <summary type="html">本文系统整理了线虫 C. elegans 实验的基础操作流程与培养基配方，包括 LB、NGM、M9、S 缓冲液及相关溶液的标准化配置方法，以及胆固醇、NaOH、金属离子溶液等辅助试剂的制备方式。文章还详细描述了线虫培养板（含 OP50）、高脂模型构建、药物处理培养基的制作流程。在线虫操作部分，重点介绍了两种同步化方法（裂解法与转板法），并说明了其适用场景和注意事项。此外，还补充了 SM 培养基、次氯酸裂解液等常用体系的配方，为线虫培养与实验提供了完整、可操作的参考指南。</summary>
+    
+    
+    
+    <category term="湿实验相关" scheme="https://www.jinhenghaoblog.top/categories/%E6%B9%BF%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="秀丽隐杆线虫" scheme="https://www.jinhenghaoblog.top/tags/%E7%A7%80%E4%B8%BD%E9%9A%90%E6%9D%86%E7%BA%BF%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>从0开始做分子对接——基于Windows系统的Autodock对接教程</title>
@@ -495,30 +516,6 @@
     
     
     <category term="生物信息" scheme="https://www.jinhenghaoblog.top/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>wormlab3.0使用介绍</title>
-    <link href="https://www.jinhenghaoblog.top/posts/20250815193333.html"/>
-    <id>https://www.jinhenghaoblog.top/posts/20250815193333.html</id>
-    <published>2025-08-15T11:33:33.000Z</published>
-    <updated>2025-10-21T03:37:50.435Z</updated>
-    
-    <content type="html"><![CDATA[<div style="position: relative;width: 100%;height: 0;padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114494449648083&bvid=BV1UREEzAEyz&cid=29924330369&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div><p><a href="https://www.youtube.com/watch?v=OdZGgVD_iv4">https://www.youtube.com/watch?v=OdZGgVD_iv4</a></p><p>视频转载自油管，并使用deepseek自动进行翻译k自动进行翻译</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">
-&lt;div style=&quot;position: relative;width: 100%;height: 0;padding-bottom: 75%;&quot;&gt;
-&lt;iframe src=&quot;//player.bilibili.com/player.html?isOutside=true&amp;a</summary>
-      
-    
-    
-    
-    <category term="湿实验相关" scheme="https://www.jinhenghaoblog.top/categories/%E6%B9%BF%E5%AE%9E%E9%AA%8C%E7%9B%B8%E5%85%B3/"/>
     
     
   </entry>
