@@ -5,6 +5,44 @@
     
     <entry>
       
+        <title>手把手教你快速完成 C.elegans qPCR 引物设计</title>
+      
+      <link href="/posts/20251125191510.html"/>
+      <url>/posts/20251125191510.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载C-elegans目标基因序列"><a href="#下载C-elegans目标基因序列" class="headerlink" title="下载C.elegans目标基因序列"></a>下载C.elegans目标基因序列</h2><p>在WormBase（<a href="https://wormbase.org/#012-34-5%EF%BC%89%E6%90%9C%E7%B4%A2%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E5%9F%BA%E5%9B%A0">https://wormbase.org/#012-34-5）搜索所需要的基因</a></p><p><img src="/images/image_1764069334751.png" alt="image.png"></p><p>点击这个框，往下拉，注意type上写cDNA的才是我们所要的</p><p><img src="/images/image_1764071331142.png" alt="image.png"></p><p>这块就是我们的目标基因，复制保存为fasta文件，其他基因同样也是这个步骤进行复制</p><h2 id="使用Primer-BLAST设计引物"><a href="#使用Primer-BLAST设计引物" class="headerlink" title="使用Primer-BLAST设计引物"></a>使用Primer-BLAST设计引物</h2><p>进入ncbi官网（<a href="https://www.ncbi.nlm.nih.gov/%EF%BC%89%E7%82%B9%E5%87%BB%E5%8F%B3%E6%A0%8F%E7%9A%84Blast%EF%BC%8C%E6%8B%89%E5%88%B0%E4%B8%8B%E9%9D%A2">https://www.ncbi.nlm.nih.gov/）点击右栏的Blast，拉到下面</a></p><p><img src="/images/image_1764070394163.png" alt="image.png"></p><p>点击Primer-BLAST</p><p><img src="/images/image_1764070469323.png" alt="image.png"></p><p>粘贴序列</p><p><img src="/images/image_1764070527488.png" alt="image.png"></p><p>设置引物的长度</p><p><img src="/images/image_1764070575993.png" alt="image.png"></p><p><img src="/images/image_1764071023002.png" alt="image.png"></p><p>注：秀丽隐杆线虫在ncbi里面是nematodes (taxid:6231)</p><p>选择物种和形式</p><p><img src="/images/image_1764070764193.png" alt="image.png"></p><p>设置完后点击Get Primers</p><p>稍等一会后我们会获得结果</p><p><img src="/images/image_1764071522408.png" alt="image.png"></p><p>需要注意的是，引物Tm值在55-65%，引物GC%在40-60%，引物长度18-25nt之间，即为理想的引物</p><p>点击Download primer pairs即可下载引物列表</p><p><img src="/images/image_1764072895970.png" alt="image.png"></p><p>之后拿去做qpcr即可</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 秀丽隐杆线虫 </tag>
+            
+            <tag> 基因测序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
+        <title>XX素描色彩第一课笔记—明度色阶间隔</title>
+      
+      <link href="/posts/20251124191510.html"/>
+      <url>/posts/20251124191510.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
         <title>线虫培养、同步化及相关培养基制备指南</title>
       
       <link href="/posts/20251121112230.html"/>
