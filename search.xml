@@ -5,6 +5,29 @@
     
     <entry>
       
+        <title>线虫 qPCR 全流程实操记录：从 RNA 提取到结果分析的完整操作</title>
+      
+      <link href="/posts/20251202191510.html"/>
+      <url>/posts/20251202191510.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文记录了从线虫中提取 RNA、反转录生成 cDNA 到最终进行 RT-qPCR 的完整实验流程。内容包括不同组别线虫的收集清洗、RNA 提取步骤与纯度测定、反转录体系计算方法，以及 qPCR 的体系配置、引物使用与上机操作注意事项。该文章可作为日后重复实验的标准化参考，提高操作效率与结果稳定性。</p><h2 id="提取RNA"><a href="#提取RNA" class="headerlink" title="提取RNA"></a>提取RNA</h2><p>本次实验设置3个组别，分别为“正常组”“2%葡萄糖造模组”“200μg&#x2F;ml 余甘子水提物+2%葡萄糖治疗组”。每组共有5个90mm培养板的线虫。线虫数量如图所示</p><p><img src="/images/af106cf07c01fa66c0f180e5b03e0658.jpg.jpeg" alt="af106cf07c01fa66c0f180e5b03e0658.jpg"></p><p>使用M9将线虫全部冲洗下来，反复清洗2次，确保线虫身上的细菌全部清洗干净。置于2ml 研磨管中，尽量吸取上清后备用。</p><p><img src="/images/1ec389b7fb976aa9867ffb26c4d9d2aa.jpg.jpeg" alt="1ec389b7fb976aa9867ffb26c4d9d2aa.jpg"></p><p>随后使用提取RNA的试剂盒，本次实验用的是UElandy的试剂盒进行实验。</p><p><img src="/images/bab12fe17e3eb0a0d099ceabcf7ab4d8.jpg.jpeg" alt="bab12fe17e3eb0a0d099ceabcf7ab4d8.jpg"></p><p>由于所使用的线虫组织量低于20mg，因此R-I、R-II（试剂盒内试剂）和异丙醇的用量都需要减半</p><p>往研磨管内添加 200μL的Buffer R-I，反复吹打。而后添加 75μL的Buffer R-I。加入完毕后，放入组织研磨仪进行研磨3分钟左右。</p><p>研磨完毕后，将研磨管放入离心机进行离心（12000g，5min）</p><p>取上清至<strong>试剂盒内提供</strong>的离心管。加入125μL的异丙醇进行备用（从这里开始，之后所有操作都需要用<strong>无酶枪头</strong>）。</p><p>而后按照图片中的步骤进行RNA提取工作：</p><p><img src="/images/3c07fecab9c0542607ddbedac20ef947.png" alt="3c07fecab9c0542607ddbedac20ef947.png"></p><ul><li>5A. 将制备管置于2 mL离心管(试剂盒内提供)中，转移步骤4中的混合液到制备管中，6,000xg离心1 min。建议在 4℃下离心。</li></ul><p>文中所述的制备管与离心管的组合如下：</p><p><img src="/images/430cfa1f7f2597658d9946a8df2ad50a.png" alt="430cfa1f7f2597658d9946a8df2ad50a.png"></p><ul><li>6A. 弃滤液，将制备管置回到2 mL离心管中，制备管中加500 μL Buffer W1A，12,000 x g离心 1 min。</li><li>7A. 弃滤液，将制备管置回到2 ml 离心管中，制备管中加700 μL Bufer W2，12,000 x g离心1 min; 以同样的方法再用700 μL Bufer W2洗涤一次。</li><li>8A. 弃滤液，将制备管置回到2 ml离心管中，12,000 x g离心1 min。</li><li>9A. 将制备管放入干净的1.5 ml离心管 (试剂盒内提供)中，在制备管膜中央加70-100 Buffer TE(DNase &amp; RNase-free)或RNase-free水。</li><li>10A. 室温静置1min， 12,000 x g 离心1min，洗脱得RNA。</li></ul><p>注：此步RNA的保存需放入-80度冰箱</p><p>随后需要借助机器测定RNA的纯度</p><p><img src="/images/45bf25035bdb164186eacca8b5b1dee4.jpg.jpeg" alt="45bf25035bdb164186eacca8b5b1dee4.jpg"></p><p>在测试之前，需要拿擦镜纸稍微擦干净探头，先拿Buffer Te当作空白组测定</p><p>随后按照自己的组别分别滴定测定，以上滴定都只需要1μL的液体</p><p><img src="/images/db25167018732ce02e5b3091f6373345.jpg.jpeg" alt="db25167018732ce02e5b3091f6373345.jpg"></p><p>测定结果看A260&#x2F;280，纯度在2.0 - 2.2是最好的</p><h2 id="反转录cDNA"><a href="#反转录cDNA" class="headerlink" title="反转录cDNA"></a>反转录cDNA</h2><p>本次反转录为DNA同样也需要试剂盒，本次使用的为Tagara反转录cDNA</p><table><thead><tr><th>试剂名称</th><th>体积</th></tr></thead><tbody><tr><td>8 x gDNA Eraser Premix</td><td>2 μL</td></tr><tr><td>RNA样本</td><td>1 μg （自行换算为μL）</td></tr><tr><td>RNA Free H20（无酶水）</td><td>根据前段RNA纯度的数据自行计算</td></tr><tr><td>Total</td><td>16 μL</td></tr><tr><td>————————————————</td><td>————</td></tr><tr><td>室温静置5分钟</td><td></td></tr><tr><td>———————————————–</td><td>———–</td></tr><tr><td>5 x RT Premix</td><td>4 μL</td></tr><tr><td>Total</td><td>20 μL</td></tr><tr><td>———————————————-</td><td>———-</td></tr><tr><td>37℃ 10min，85℃ 5sec， 4℃保温（PCR）</td><td></td></tr></tbody></table><p>在这个体系中着重说明一下无酶水以及RNA样本的具体添加量的计算，在前段的体系中需要加入总体积为16μL的液体。根据前面测定RNA纯度所得的每个样本的RNA浓度（ng&#x2F;μL）进行计算。</p><p>在这里以第一行的143.3 ng&#x2F;μL为例子进行计算。计算需要多少微升（μL）的液体来获得 1 微克（μg）的物质。</p><p><img src="/images/image_1764818778203.png" alt="image.png"></p><p>四舍五入，则RNA样本处需要加7 μL的液体，那无酶水这一块就只需要加入7 μL就能满足液体总体积为16 μL的要求了。</p><p><img src="/images/6387756fbbc51899fb4086a3ec2ac66a.jpg.jpeg" alt="6387756fbbc51899fb4086a3ec2ac66a.jpg"></p><p>添加完液体后，放入pcr运行即可。此时可放入4℃暂时进行保存。</p><h2 id="RT-qPCR"><a href="#RT-qPCR" class="headerlink" title="RT-qPCR"></a>RT-qPCR</h2><p>做RT-qPCR所需要的试剂盒也是Takara的试剂盒：</p><p><img src="/images/dee002216d2b802ade5e5853a3e80e23.jpg.jpeg" alt="dee002216d2b802ade5e5853a3e80e23.jpg"></p><p>本次做RT-qPCR所用的体系为，另外还需要准备内参F&#x2F;R，目的基因引物F&#x2F;R，以下是每个孔所需要加的试剂：</p><table><thead><tr><th>试剂名称</th><th>体积</th></tr></thead><tbody><tr><td>SYBR Premix Ex Taq10 μL PCR</td><td>10 μL</td></tr><tr><td>PCR Forward Primer（0.2 μm）【引物F】</td><td>0.4 μL</td></tr><tr><td>PCR Reverse Primer（0.2 μm）【引物R】</td><td>0.4 μL</td></tr><tr><td>cDNA</td><td>0.4 μL</td></tr><tr><td>ddH2O</td><td>8.8 μL</td></tr></tbody></table><p>在正式实验之前，先用无酶水把引物溶解了，每个引物所要加入的量一般会写在离心管中：</p><p><img src="/images/101fb69c971c35ebb41f8e21cc6a2f30.png" alt="101fb69c971c35ebb41f8e21cc6a2f30.png"></p><p>若是给每个孔都一遍遍这样加就显得非常麻烦。建议按照需求，统一配比统一加入。如我这里有3个目的基因+1内参 ，在qpcr的板子上是这样的（N、2%、200表示的是组别；act、z-5、C49、C05表示基因；三个孔是技术重复）：</p><p><img src="/images/9e27b6a0002da5fdf91cd29fd9f0411b.jpg.jpeg" alt="9e27b6a0002da5fdf91cd29fd9f0411b.jpg"></p><p>可以先按照孔位先提前混合 cDNA+H20；SYBR Premix Ex Taq + 引物（F）+ 引物（R）后，统一加入孔中，这就按照个人需求自行配比了</p><p><strong>注：需要借助机器混合，另外还要离心一下，以免液滴粘附在壁上</strong></p><p>加完孔后需要给板子封膜，再统一混匀</p><p><img src="/images/08de4954ab900380b8677f76874c55fc.jpg.jpeg" alt="08de4954ab900380b8677f76874c55fc.jpg"></p><p><img src="/images/b20aed0a6dd8a72f67593d0a47ae0474.jpg.jpeg" alt="b20aed0a6dd8a72f67593d0a47ae0474.jpg"></p><p><img src="/images/62a5499110e5bfc00ed72706928e53c4.jpg.jpeg" alt="62a5499110e5bfc00ed72706928e53c4.jpg"></p><p>摇匀后再借助甩板机离心一下，以免液滴粘附在壁上，尖尖朝外</p><p><img src="/images/188d50169f4002a39ca74260072b8494.jpg.jpeg" alt="188d50169f4002a39ca74260072b8494.jpg"></p><p>甩完后即可上机进行RT-qPCR的测定，机器上详细的参数就需要根据需求去调整了</p><p><img src="/images/c3c687186e83f55888c8d343b10531c0.jpg.jpeg" alt="c3c687186e83f55888c8d343b10531c0.jpg"></p><p>另外每个机器其导出的数据和使用方法不一样，所以得因地制宜。唯一相同的点是都需要导出含ct值的表格，像这样：</p><p><img src="/images/image_1764821821031.png" alt="image.png"></p><p>获取后自行查看B站作图即可</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 秀丽隐杆线虫 </tag>
+            
+            <tag> 基因测序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
         <title>手把手教你快速完成 C.elegans qPCR 引物设计</title>
       
       <link href="/posts/20251125191510.html"/>
