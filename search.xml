@@ -5,6 +5,33 @@
     
     <entry>
       
+        <title>秀丽线虫油红O染色的实战心得与实验方案</title>
+      
+      <link href="/posts/20251216110932.html"/>
+      <url>/posts/20251216110932.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>线虫油红O测定是做线虫脂质代谢研究中不能不品的一环，在这里分享一下自己做油红O染色的心得</p><h2 id="实验材料准备"><a href="#实验材料准备" class="headerlink" title="实验材料准备"></a>实验材料准备</h2><ul><li>线虫（数量20-30条）</li><li>油红O染色试剂盒</li><li>M9缓冲液</li></ul><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p><strong>油红0工作液的制备</strong></p><p>根据样品数量及每个样品所需的染色工作液的体积，按油红0溶液与油红0稀释液 3:2 的比例配制油红 0染色工作液。然后用 0.45 微米的水系针头滤器过滤，两小时内使用。</p><p><strong>实验过程</strong></p><p>根据实验目的，培养大量所需时期的秀丽线虫;</p><p>洗涤: 将板上线虫挑至(冲洗)到离心管，用 M9缓冲液洗涤线虫 2-3次，自然沉淀</p><p>染色: 每个管中加入 <strong>200 μL</strong>油红0工作液，避光染色约1个晚上（个人比较喜欢晚上染色，第二天早上拿出来测定）</p><p>脱色: 首先使用试剂盒中的洗涤液冲洗，待自然沉淀后，使用含 0.01%(20ml加 2ul) Triton-X100 的 M9 缓冲液清洗3次，不要用离心机沉淀虫子，让其自然沉降(直至无色)，离心弃上清，最后一次剩一点的液体(液体越少越好)，冲洗到这种程度就差不多了</p><p><img src="/images/db64a17058f98b9ad6f5cc9fdde69ca0.jpg.jpeg" alt="db64a17058f98b9ad6f5cc9fdde69ca0.jpg"></p><p>5、拍照:随后将离心管里剩下的液体和线虫全部转移至 2%琼脂糖胶垫上，即可拍照</p><p>琼脂胶垫一般个人是用枪头滴2滴在载玻片上，然后呈十字稍微压一下，目的是平摊琼脂胶垫</p><p><img src="/images/5c07f186261c5b33910ad3ad3bd8068e.jpg.jpeg" alt="5c07f186261c5b33910ad3ad3bd8068e.jpg"></p><p>等到要测的时候，把上面的载玻片拿开，直接滴取线虫液在胶垫上，直接用显微镜观察</p><p><img src="/images/0c17959eb425633fd8ded4b39420d35a.jpg.jpeg" alt="0c17959eb425633fd8ded4b39420d35a.jpg"></p><p>调整好视野后基本能看到染色后的虫子状态</p><p><img src="/images/ee1885a1f94c06894bccd510abebd054.jpg.jpeg" alt="ee1885a1f94c06894bccd510abebd054.jpg"></p><p>注：如果拍照过程中虫子干了，可以往琼脂垫再加一点点的液体，让其重新湿润再拍照，不要在虫子干的状态下拍照，虫子干的时候拍摄会发现虫子周边会有黑圈，会极大阻碍油红O响应值的测定</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 湿实验相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 秀丽隐杆线虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
         <title>线虫 qPCR 全流程实操记录：从 RNA 提取到结果分析的完整操作</title>
       
       <link href="/posts/20251202191510.html"/>
