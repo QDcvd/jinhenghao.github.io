@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.jinhenghaoblog.top/posts/20260122131510.html</loc>
+    <loc>https://www.jinhenghaoblog.top/posts/20260122120410.html</loc>
     
     <lastmod>2026-01-22</lastmod>
     
@@ -448,6 +448,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://www.jinhenghaoblog.top/tags/%E6%9D%82%E9%A1%B9/</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -494,6 +501,13 @@
   
   <url>
     <loc>https://www.jinhenghaoblog.top/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jinhenghaoblog.top/categories/%E6%9D%82%E9%A1%B9/</loc>
     <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
