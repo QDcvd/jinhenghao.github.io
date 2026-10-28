@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="880" viewBox="0 0 1240 880" role="img" aria-label="我的个人 Pi 插件组合分层图">
+  <defs>
+    <style>
+      .ttl { font: 600 26px "Microsoft YaHei", system-ui, sans-serif; fill: #1f2937; }
+      .sub { font: 400 14px "Microsoft YaHei", system-ui, sans-serif; fill: #6b7280; }
+      .bandlbl { font: 600 16px "Microsoft YaHei", system-ui, sans-serif; fill: #0f172a; }
+      .box { font: 500 14px "Microsoft YaHei", system-ui, sans-serif; fill: #0f172a; }
+      .small { font: 400 12px "Microsoft YaHei", system-ui, sans-serif; fill: #475569; }
+      .tag { font: 600 11px "Microsoft YaHei", system-ui, sans-serif; }
+    </style>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1240" height="880" fill="#f8fafc"/>
+  <text x="40" y="48" class="ttl">我的个人 Pi 插件组合：26 个组件的分层</text>
+  <text x="40" y="72" class="sub">14 个扩展包（Extension）+ 12 个 Skill ｜ Pi 1.4.0 ｜ 蓝=Extension，橙=Skill，绿=两者都有</text>
+
+  <!-- 左侧纵向安全网 -->
+  <g filter="url(#sh)">
+    <rect x="40" y="100" width="112" height="600" rx="14" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+  </g>
+  <text x="96" y="128" text-anchor="middle" class="bandlbl">安全网</text>
+  <text x="96" y="152" text-anchor="middle" class="box">pi-workspace</text>
+  <text x="96" y="170" text-anchor="middle" class="box">-history</text>
+  <text x="96" y="196" text-anchor="middle" class="small">/undo /redo</text>
+  <text x="96" y="214" text-anchor="middle" class="small">/tree /checkpoint</text>
+  <text x="96" y="248" text-anchor="middle" class="small">横跨所有层的</text>
+  <text x="96" y="266" text-anchor="middle" class="small">文件状态回滚</text>
+  <line x1="152" y1="400" x2="176" y2="400" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- L1 交互层 -->
+  <g filter="url(#sh)"><rect x="180" y="100" width="1020" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/></g>
+  <text x="200" y="130" class="bandlbl">① 交互层</text>
+  <text x="200" y="150" class="small">问得对，才干得对</text>
+  <g>
+    <rect x="330" y="118" width="270" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="345" y="142" class="box">rpiv-ask-user-question</text>
+    <rect x="610" y="118" width="150" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="625" y="142" class="box">pi-btw</text>
+    <rect x="770" y="118" width="150" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="785" y="142" class="box">pi-jingle</text>
+    <rect x="930" y="118" width="250" height="38" rx="8" fill="#ffedd5" stroke="#f97316"/>
+    <text x="945" y="142" class="box">grill-me（拷问方案）</text>
+  </g>
+
+  <!-- L2 模型行为 -->
+  <g filter="url(#sh)"><rect x="180" y="184" width="1020" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/></g>
+  <text x="200" y="214" class="bandlbl">② 模型行为层</text>
+  <text x="200" y="234" class="small">控制想多深、怎么想</text>
+  <g>
+    <rect x="330" y="202" width="300" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="345" y="226" class="box">pi-preferred-thinking</text>
+    <rect x="640" y="202" width="300" height="38" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="655" y="226" class="box">deepseek-v4-flash-router</text>
+    <text x="948" y="226" class="tag" fill="#16a34a">扩展+Skill</text>
+  </g>
+
+  <!-- L3 规划 -->
+  <g filter="url(#sh)"><rect x="180" y="268" width="1020" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/></g>
+  <text x="200" y="298" class="bandlbl">③ 规划层</text>
+  <text x="200" y="318" class="small">动手前把路线画清</text>
+  <g>
+    <rect x="330" y="286" width="230" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="345" y="310" class="box">pi-plan（/plan）</text>
+    <rect x="570" y="286" width="250" height="38" rx="8" fill="#ffedd5" stroke="#f97316"/>
+    <text x="585" y="310" class="box">wayfinder（决策地图）</text>
+    <text x="828" y="310" class="small">三者互相重叠，靠 description 抢活</text>
+  </g>
+
+  <!-- L4 记忆与上下文 -->
+  <g filter="url(#sh)"><rect x="180" y="352" width="1020" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/></g>
+  <text x="200" y="382" class="bandlbl">④ 记忆 / 上下文层</text>
+  <text x="200" y="402" class="small">省 token，且不丢理由</text>
+  <g>
+    <rect x="330" y="370" width="270" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="345" y="394" class="box">pi-observational-memory</text>
+    <rect x="610" y="370" width="215" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="625" y="394" class="box">pi-context-usage</text>
+    <rect x="835" y="370" width="190" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="850" y="394" class="box">pi-rtk-optimizer</text>
+    <rect x="1035" y="370" width="165" height="38" rx="8" fill="#ffedd5" stroke="#f97316"/>
+    <text x="1050" y="394" class="box">memmy-memory</text>
+  </g>
+
+  <!-- L5 代码理解 -->
+  <g filter="url(#sh)"><rect x="180" y="436" width="1020" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/></g>
+  <text x="200" y="466" class="bandlbl">⑤ 代码理解层</text>
+  <text x="200" y="486" class="small">找到，而不是猜</text>
+  <g>
+    <rect x="330" y="454" width="240" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="345" y="478" class="box">pi-fff（ffgrep/fffind）</text>
+    <rect x="580" y="454" width="270" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="595" y="478" class="box">@vndv/pi-codegraph</text>
+    <text x="862" y="478" class="small">替代 / 补强内核的 grep、find</text>
+  </g>
+
+  <!-- L6 外部信息 -->
+  <g filter="url(#sh)"><rect x="180" y="520" width="1020" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/></g>
+  <text x="200" y="550" class="bandlbl">⑥ 外部信息层</text>
+  <text x="200" y="570" class="small">联网与看图的三条路</text>
+  <g>
+    <rect x="330" y="538" width="235" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="345" y="562" class="box">@bytetrue/pi-web-search</text>
+    <rect x="575" y="538" width="200" height="38" rx="8" fill="#ffedd5" stroke="#f97316"/>
+    <text x="590" y="562" class="box">web-access（CDP）</text>
+    <rect x="785" y="538" width="200" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="800" y="562" class="box">pi-chrome</text>
+    <rect x="995" y="538" width="205" height="38" rx="8" fill="#dbeafe" stroke="#3b82f6"/>
+    <text x="1010" y="562" class="box">pi-vision 看图</text>
+  </g>
+
+  <!-- L7 交付 -->
+  <g filter="url(#sh)"><rect x="180" y="604" width="1020" height="72" rx="12" fill="#ffffff" stroke="#cbd5e1"/></g>
+  <text x="200" y="634" class="bandlbl">⑦ 交付产出层</text>
+  <text x="200" y="654" class="small">生信 + 写作为主</text>
+  <g>
+    <rect x="330" y="622" width="170" height="38" rx="8" fill="#ffedd5" stroke="#f97316"/>
+    <text x="345" y="646" class="box">docx</text>
+    <rect x="510" y="622" width="180" height="38" rx="8" fill="#ffedd5" stroke="#f97316"/>
+    <text x="525" y="646" class="box">ppt-master</text>
+    <rect x="700" y="622" width="300" height="38" rx="8" fill="#ffedd5" stroke="#f97316"/>
+    <text x="715" y="646" class="box">nature-writing / polishing</text>
+    <rect x="1010" y="622" width="190" height="38" rx="8" fill="#ffedd5" stroke="#f97316"/>
+    <text x="1025" y="646" class="box">nature-acad-search</text>
+  </g>
+
+  <!-- 内核 -->
+  <g filter="url(#sh)"><rect x="40" y="726" width="1160" height="72" rx="12" fill="#e2e8f0" stroke="#475569"/></g>
+  <text x="60" y="756" class="bandlbl">Pi 内核（默认能力，不装任何包也有）</text>
+  <text x="60" y="776" class="small">defaultTools 仅启用 read / bash / edit / write（grep、find、ls 默认关闭）｜原生 compaction 与 /tree、/compact｜Skill 与 Extension 加载机制｜npm/git 分发</text>
+  <rect x="900" y="744" width="290" height="38" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="915" y="768" class="box">find-skills / tdd：元能力与流程</text>
+
+  <text x="40" y="846" class="sub">注：pi-rtk-optimizer 与 pi-fff 都作用于检索链路；pi-chrome 的 23 个工具在 /chrome authorize 前不注入上下文。</text>
+</svg>
